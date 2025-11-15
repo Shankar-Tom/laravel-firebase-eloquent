@@ -6,21 +6,14 @@ Supports **Laravel 10/11/12**.
 ## Install (local path)
 
 1) Add repository to your app `composer.json`:
-
-```json
-"repositories": [
-  {"type":"path","url":"packages/laravel-firebase-db"}
-]
-```
-
-2) Extract this package into `packages/laravel-firebase-db` then:
+Extract this package into `packages/laravel-firebase-db` then:
 
 ```bash
 composer require shankar/laravel-firebase-db:@dev
 php artisan vendor:publish --tag=firebase-db-config
 ```
 
-3) Configure `.env`:
+2) Configure `.env`:
 
 ```
 FIREBASE_CREDENTIALS=/full/path/to/storage/app/firebase/credentials.json
@@ -28,7 +21,7 @@ FIREBASE_DATABASE_URL=https://your-project-id-default-rtdb.firebaseio.com
 FIREBASE_DB_PER_PAGE=15
 ```
 
-4) Create a model:
+3) Create a model:
 
 ```php
 use Shankar\FirebaseDb\Model;
