@@ -5,8 +5,7 @@ Supports **Laravel 10/11/12**.
 
 ## Install (local path)
 
-1) Add repository to your app `composer.json`:
-Extract this package into `packages/laravel-firebase-db` then:
+1) 
 
 ```bash
 composer require shankar/laravel-firebase-db:@dev
